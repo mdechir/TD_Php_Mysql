@@ -1,0 +1,134 @@
+body{
+  background-color: #000000;
+  color: rgb(133, 4, 219);
+  font-family: 'Calibri';
+  margin: 0.5%;
+  font-size: 20px;
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+
+.flags
+{
+  margin-right: auto;
+  margin-left: auto;
+  width:4vw; 
+  height:4vw;  
+  margin-top: 2vw;
+}
+
+/* Remove scrollbar on Firefox */
+:root { 
+  scrollbar-width: none !important 
+} 
+
+/* Remove scrollbar on Chrome and Edge*/
+body::-webkit-scrollbar { 
+  width: 0 !important
+}
+
+
+/* Style the navigation menu */
+.navbar {
+    width: 100%;
+    background-color:#666666;
+    border-radius: 0px;
+    overflow: auto;
+  }
+  
+  /* Navigation links */
+  .navbar a {
+    float: left;
+    padding:0.621vw;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font: 1.2em "Calibri", sans-serif;
+    font-size: 25px;
+    width: 15.4%; /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
+    text-align: center; /* If you want the text to be cenered */
+  }
+  
+  /* Add a background color on mouse-over */
+  .navbar a:hover {
+  border-radius: 0px;
+  background-color: #33333377;
+  transition: 0.5s;
+  }
+  
+  /* Style the current/active link */
+  .navbar a.active {
+    border-radius: 0px;
+    background-color: #6200bd49;
+  }
+  
+  /* Add responsiveness - on screens less than 500px, make the navigation links appear on top of each other, instead of next to each other */
+  @media screen and (max-width: 1100px) {
+    .navbar a {
+      float: none;
+      display: block;
+      margin-left: 4vw;
+      width: 88vw;
+      text-align: center; /* If you want the text to be left-aligned on small screens */
+    }
+  }
+
+.container {
+   /* Container holding the image and the text */
+   position: relative;
+   text-align: center;
+   font-size: 10vw;
+}
+
+.centered { /* Centered text in image */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+img { /*add resize of image for mobile*/
+  border-radius: 15px;
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+/* Style the table */
+table {
+  border-radius: 15px;
+  overflow: hidden;
+  table-layout:fixed;
+  border-collapse: collapse;
+  border-spacing: 0;
+  font-size: 20px;
+  width: 100%;
+}
+
+/* Style table headers and table data */
+th, td {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Center the first child to the left */
+th:first-child, td:first-child {
+  text-align: center;
+}
+
+/* striped table rows */
+tr:nth-child(even) {
+  background-color: #411f61
+}
+
+td { /*add break word when the size of screen is limited*/
+  word-wrap: break-word;
+}
+
+.audio-container { /*Center audio container and adapt to screen size*/
+  display: flex;
+  justify-content: center;
+  align-items: center 
+}
+
+li{
+list-style-type: none; /*Remove the point on the <li> balise*/
+}
